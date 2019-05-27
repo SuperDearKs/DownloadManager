@@ -25,6 +25,4 @@ public class ElephantApp extends Application {
         String cache = StorageUtils.getCacheDirectory(this) + "/" + MD5Tools.hashKeyForDisk("com.camera.master");
         AppStoragePath.setCachePath(cache);
     }
-
-
 }

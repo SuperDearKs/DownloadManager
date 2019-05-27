@@ -17,6 +17,7 @@ allprojects {
   implementation 'com.github.SuperDearKs:DownloadManager:0.1'
   
 3.在你需要用的地方使用：（事先需要获取sd权限）
+
  DownloadManager.getInstance().downloadPath(AppStoragePath.getCachePath()).download(url1, new DownFileCallback() {
                     @Override
                     public void onProgress(long totalSize, long downSize) {

@@ -16,10 +16,10 @@ allprojects {
   
   implementation 'com.github.SuperDearKs:DownloadManager:0.1'
   
- 3.在你的AndroidManifest文件的application标签下添加
+3.在你的AndroidManifest文件的application标签下添加
   android:networkSecurityConfig="@xml/network_security_config"
   
-3.在你需要用的地方使用：（事先需要获取sd权限）
+4.在你需要用的地方使用：（事先需要获取sd权限）
 
  DownloadManager.getInstance().downloadPath(AppStoragePath.getCachePath()).download(url1, new DownFileCallback() {
                     @Override
